@@ -33,7 +33,7 @@ def play(player_name):
         try:
             user_pick = int(input(
                 f"{SECOND_COLOR}Whats your pick? \n"
-                f"1 = rock 🎼, 2 = paper 💸 or 3 = scissors ✂️ {RESET} {YELLOW}(p.s. Computer can't read){RESET}\n"))
+                f"1 = rock 🪨, 2 = paper 💸 or 3 = scissors 🔪 {RESET} {YELLOW}(p.s. Computer can't read){RESET}\n"))
         except ValueError:
             print(f"Please pick: 1 for rock, 2 for paper or 3 for scissors")
             continue
@@ -68,7 +68,7 @@ YELLOW = rgb_escape_code(255, 222, 106)  # yellow
 
 RESET = "\033[0m"  # Reset color
 
-print(f"{SECOND_COLOR}Welcome to Rock 🎼 Paper💸 Scissors ✂️{RESET}")
+print(f"{SECOND_COLOR}Welcome to Rock🪨 Paper💸 Scissors🔪{RESET}")
 player = input("What's your name? ")
 print(f"That's great, {player}! My name is Computer. Let's play!")
 play(player)
